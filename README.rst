@@ -21,12 +21,20 @@ Getting started with rust
    # The Package Manager|Build Tool
    cargo --version
 
-Functions
-----------
+Functions and Macros
+--------------------
 .. code:: rust
 
+   // C like Comments
+   /*Multiple
+      * Line
+      Comments*/
    fn main(){
       println!("Text");
+      add(21,34);
+   }
+   fn add(x: &int,y: &int){
+      println!("{} + {} = {}",x,y,x+y);
    }
 
 Projects
@@ -56,23 +64,35 @@ Variables,Types and Such
 * Booleans true || false
 * Strings[Characters]
 
-Basic Math
--------------
+Basic Types, Loops
+--------------------------
 .. code:: rust
 
    let dyn_math= 8*8-2+221;
+
    pritnln!("Dynamic math {}",dyn_math);
+
    let my_array=[1,2,3,4,5,6,7];
+
    let my_tuple=(,42,34.3,"tralah");
+
    let (dyn_x,dyn_y,dyn_z)=my_tuple;//tuple unpacking as python
+
    // Array Indexing
    println!("{}",my_array[3]);
 
+   // Array Looping
+   for i in my_array.iter(){
+      println!("{}",i);
+   }
+
 Crates
 ---------
-Third Party Libraries
-for
+Third Party Libraries for
 - Games
+
 - Math
+
 - Networks
+
 - Graphics [ OpenGL ]
