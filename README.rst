@@ -13,7 +13,7 @@ Getting started with rust
 - Data types are immutable by default
 - WASM  webassembly
 
-- *cargo*  package manager for Rust
+- **cargo**  package manager for Rust
 .. code:: bash
 
    rustc --version
@@ -24,7 +24,7 @@ Functions
 .. code:: rust
 
    fn main(){
-   println!("Text");
+      println!("Text");
    }
 
 Projects
@@ -48,6 +48,7 @@ Variables,Types and Such
    println!("x= {} \n y={}",x,y);//macros
    //x=43; causes error as x is immutable
    y=231;//is ok as y is mutable
+
 * Integers 1
 * Floats 2.3
 * Booleans true || false
@@ -65,3 +66,11 @@ Basic Math
    // Array Indexing
    println!("{}",my_array[3]);
 
+Crates
+---------
+Third Party Libraries
+for
+- Games
+- Math
+- Networks
+- Graphics [ OpenGL ]
