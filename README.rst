@@ -16,7 +16,9 @@ Getting started with rust
 - **cargo**  package manager for Rust
 .. code:: bash
 
+   # The Rust Compiler
    rustc --version
+   # The Package Manager|Build Tool
    cargo --version
 
 Functions
