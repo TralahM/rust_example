@@ -18,33 +18,36 @@ Introduction to Rust Programming
 
 A Case for Oxidation (Rust)
 ----------------------------
-- Memory Safety
+
+Memory Safety
 *******************
-  Dereferences always succeed, always points to values of a correct type
-  if r:&Foo then * r is always equal to Foo
-  + No dangling pointers
+Dereferences always succeed, always points to values of a correct type
+if r:&Foo then * r is always equal to Foo
+- No dangling pointers
 
-  + No access after memory free
+- No access after memory free
 
-  + Forced Initialization+ Restricted aliasing+ Ownership = memory safety
+- Forced Initialization+ Restricted aliasing+ Ownership = memory safety
 
-  All at *compile-time*
+All at *compile-time*
 
-  Aliasing Is hard!  avoid **segmentation faults** like in C/C++
-  So  we restrict aliasing so only 1 mutable alias or N immutable aliases
+Aliasing Is hard!  avoid **segmentation faults** like in C/C++
+So  we restrict aliasing so only 1 mutable alias or N immutable aliases
+
 Borrowing
 ^^^^^^^^^^^
-  .. code:: rust
 
-     let x=Person("Tralah");
-     let y=&x;
-     let z=&x;
-     //let z=x;  would fail as x is already borrowed
-     /* Ownership
-       *let x=32;
-       *let y=x;
-       *let z=x;fails as x already belongs to y
-     */
+.. code:: rust
+
+   let x=Person("Tralah");
+   let y=&x;
+   let z=&x;
+   //let z=x;  would fail as x is already borrowed
+   /* Ownership
+    *let x=32;
+    *let y=x;
+    *let z=x;fails as x already belongs to y
+   */
 
 Concurrency
 ^^^^^^^^^^^^^
@@ -79,6 +82,7 @@ Getting started with rust
 - WASM  webassembly
 
 - **cargo**  package manager for Rust
+
 .. code:: bash
 
    # The Rust Compiler
@@ -170,6 +174,7 @@ Web Framework written is rust makes it secure by avoiding
 - XSS,
 
 - Directory Travesals,
+
   .. code:: rust
 
      #[get("/<path>")]
