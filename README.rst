@@ -8,6 +8,71 @@ Introduction to Rust Programming
 - Strict types language
 - LLVM Based
 
+- Comparable to **CYCLONE** a programming language without a garbage collector
+
+- High Level Abstraction
+
+- Build System
+
+- Data Race Free (!?)
+
+A Case for Oxidation (Rust)
+----------------------------
+- Memory Safety
+*******************
+  Dereferences always succeed, always points to values of a correct type
+  if r:&Foo then * r is always equal to Foo
+  + No dangling pointers
+
+  + No access after memory free
+
+  + Forced Initialization+ Restricted aliasing+ Ownership = memory safety
+
+  All at *compile-time*
+
+  Aliasing Is hard!  avoid **segmentation faults** like in C/C++
+  So  we restrict aliasing so only 1 mutable alias or N immutable aliases
+Borrowing
+^^^^^^^^^^^
+  .. code:: rust
+
+     let x=Person("Tralah");
+     let y=&x;
+     let z=&x;
+     //let z=x;  would fail as x is already borrowed
+     /* Ownership
+       *let x=32;
+       *let y=x;
+       *let z=x;fails as x already belongs to y
+     */
+
+Concurrency
+^^^^^^^^^^^^^
+Not supported natively by the language because of the safe mem feature of Rust
+Only Provided by Third Party Libraries which do this by using a concept of unsafe nemory
+or unsafe rust.
+
+- Minimal Runtime
+
+- StrongType System
+
+- Performance
+
+
+Why Should we Care?
+---------------------
+We want secure systems
+We want the right tools
+C/C++ is old and ill designed, have to write Makefiles and toolchains
+Prevents us from doing the wrong things
+Good for writing System Software
+Guaranteed Security
+
+Guarantees
+-------------
+Memory safety without garbage collection
+No data races
+
 Getting started with rust
 ------------------------------
 - Data types are immutable by default
@@ -89,6 +154,7 @@ Basic Types, Loops
 Crates
 ---------
 Third Party Libraries for
+
 - Games
 
 - Math
@@ -96,3 +162,31 @@ Third Party Libraries for
 - Networks
 
 - Graphics [ OpenGL ]
+
+Rocket
+*********
+Web Framework written is rust makes it secure by avoiding
+
+- XSS,
+
+- Directory Travesals,
+  .. code:: rust
+
+     #[get("/<path>")]
+     fn retrieve(user: User,pid: PastebinId){
+      File::f=12;
+     }
+
+- Remote Code Exec
+
+- Sql Injection
+
+- Authentication
+
+- Authorization
+
+- CORS
+
+- Mosconfiguration
+
+- Input Validation
