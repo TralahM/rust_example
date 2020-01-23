@@ -139,6 +139,11 @@ Basic Types, Loops
 
    let dyn_math= 8*8-2+221;
 
+   const NAME:str="Tralah M Brian";
+   const ID: i32 =001;
+   println!("{}",NAME);
+   println!("{}",ID);
+
    pritnln!("Dynamic math {}",dyn_math);
 
    let my_array=[1,2,3,4,5,6,7];
