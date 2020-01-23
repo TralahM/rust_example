@@ -16,11 +16,22 @@ Introduction to Rust Programming
 
 - Data Race Free (!?)
 
+
+Contents
+----------
+:ref: `A case for Oxidation <Memory Safety>`
+:ref: `<Getting started with Rust>`
+:ref: `<Projects>`
+:ref: `<Crates>`
+:ref: `<Rocket>`
+:ref: `See Screenshots <Screenshots>`
+
+
 A Case for Oxidation (Rust)
 ----------------------------
 
-Memory Safety
-*******************
+.. _Memory Safety:
+
 Dereferences always succeed, always points to values of a correct type
 if r:&Foo then * r is always equal to Foo
 - No dangling pointers
@@ -76,8 +87,8 @@ Guarantees
 Memory safety without garbage collection
 No data races
 
-Getting started with rust
-------------------------------
+.. _Getting started with Rust:
+
 - Data types are immutable by default
 - WASM  webassembly
 
@@ -106,8 +117,8 @@ Functions and Macros
       println!("{} + {} = {}",x,y,x+y);
    }
 
-Projects
------------
+.. _Projects:
+
 .. code:: bash
 
    cargo new project_name
@@ -160,8 +171,7 @@ Basic Types, Loops
       println!("{}",i);
    }
 
-Crates
----------
+.. _Crates:
 Third Party Libraries for
 
 - Games
@@ -172,8 +182,8 @@ Third Party Libraries for
 
 - Graphics [ OpenGL ]
 
-Rocket
-*********
+.. _Rocket:
+
 Web Framework written is rust makes it secure by avoiding
 
 - XSS,
@@ -202,7 +212,7 @@ Web Framework written is rust makes it secure by avoiding
 - Input Validation
 
 
-ScreenShots
-============
+.. _ScreenShots:
+
 ..image:: helloworld.png
 
