@@ -36,6 +36,8 @@ A Case for Oxidation (Rust)
 ----------------------------
 
 .. _Memory Safety:
+Memory Safety
+**************
 
 Dereferences always succeed, always points to values of a correct type
 if r:&Foo then * r is always equal to Foo
@@ -94,6 +96,9 @@ No data races
 
 .. _Getting started with Rust:
 
+Getting started with Rust
+******************************
+
 - Data types are immutable by default
 - WASM  webassembly
 
@@ -123,6 +128,8 @@ Functions and Macros
    }
 
 .. _Projects:
+Projects
+***********
 
 .. code:: bash
 
@@ -177,6 +184,8 @@ Basic Types, Loops
    }
 
 .. _Crates:
+Crates
+*******
 Third Party Libraries for
 
 - Games
@@ -188,6 +197,8 @@ Third Party Libraries for
 - Graphics [ OpenGL ]
 
 .. _Rocket:
+Rocket
+*******
 
 Web Framework written is rust makes it secure by avoiding
 
@@ -217,7 +228,9 @@ Web Framework written is rust makes it secure by avoiding
 - Input Validation
 
 
-.. _ScreenShots:
+.. _Screenshots:
+Screenshots
+***********
 
 .. image:: helloworld.png
 
