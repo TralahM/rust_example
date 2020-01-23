@@ -1,3 +1,4 @@
+mod macros;
 mod module1;
 fn do_sth(){
     // C style comments
@@ -35,6 +36,7 @@ fn main() {
     fx_args("Tralah");
     println!("Using modules...");
     module1::run();
+    welcome!();
 }
 
 fn fx_args(name: &str){
