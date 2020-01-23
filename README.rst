@@ -20,10 +20,15 @@ Introduction to Rust Programming
 Contents
 ----------
 :ref: `A case for Oxidation <Memory Safety>`
+
 :ref: `<Getting started with Rust>`
+
 :ref: `<Projects>`
+
 :ref: `<Crates>`
+
 :ref: `<Rocket>`
+
 :ref: `See Screenshots <Screenshots>`
 
 
@@ -214,5 +219,5 @@ Web Framework written is rust makes it secure by avoiding
 
 .. _ScreenShots:
 
-..image:: helloworld.png
+.. image:: helloworld.png
 
