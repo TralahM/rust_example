@@ -186,6 +186,7 @@ Basic Types, Loops
 .. _Crates:
 Crates
 *******
+`<https://crates.io>`_
 Third Party Libraries for
 
 - Games
