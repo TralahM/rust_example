@@ -1,5 +1,6 @@
 mod macros;
 mod module1;
+mod another;
 fn do_sth(){
     // C style comments
     let x=90;
@@ -36,6 +37,7 @@ fn main() {
     fx_args("Tralah");
     println!("Using modules...");
     module1::run();
+    another::fibonacci(13);
     welcome!();
 }
 
